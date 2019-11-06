@@ -11,5 +11,5 @@ jobs:
     - uses: actions/checkout@v1
     - uses: boschcrank/oss-review-toolkit@master
       with:
-        ort-args: 'analyze -i /github/workspace -o /github/workflow/results'
+        output-dir: '/github/workflow/results'
     - run: cat results/analyzer-result.yml
