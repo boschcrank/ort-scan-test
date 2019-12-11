@@ -1,0 +1,2545 @@
+---
+repository:
+  vcs:
+    type: "Git"
+    url: "https://github.com/boschcrank/ort-scan-test.git"
+    revision: "0338c5e121878a43989c1727bb733ab8830acb6d"
+    path: ""
+  vcs_processed:
+    type: "Git"
+    url: "https://github.com/boschcrank/ort-scan-test.git"
+    revision: "0338c5e121878a43989c1727bb733ab8830acb6d"
+    path: ""
+  config: {}
+analyzer:
+  start_time: "2019-11-06T09:38:57.801269Z"
+  end_time: "2019-11-06T09:41:22.751302Z"
+  environment:
+    ort_version: "0.1.0-beta.0.4190+20191105T163615Z"
+    java_version: "11.0.5"
+    os: "Linux"
+    variables:
+      JAVA_HOME: "/docker-java-home"
+    tool_versions: {}
+  config:
+    ignore_tool_versions: false
+    allow_dynamic_versions: false
+  result:
+    projects:
+    - id: "Maven:com.bosch:ort-scan-test:0.0.1-SNAPSHOT"
+      definition_file_path: "pom.xml"
+      declared_licenses:
+      - "Apache License, Version 2.0"
+      declared_licenses_processed:
+        spdx_expression: "Apache-2.0"
+      vcs:
+        type: ""
+        url: ""
+        revision: ""
+        path: ""
+      vcs_processed:
+        type: "Git"
+        url: "https://github.com/boschcrank/ort-scan-test.git"
+        revision: "0338c5e121878a43989c1727bb733ab8830acb6d"
+        path: ""
+      homepage_url: "https://projects.spring.io/spring-boot/#/spring-boot-starter-parent/ort-scan-test"
+      scopes:
+      - name: "compile"
+        dependencies:
+        - id: "Maven:com.fasterxml.jackson.module:jackson-module-kotlin:2.10.0"
+          dependencies:
+          - id: "Maven:com.fasterxml.jackson.core:jackson-annotations:2.10.0"
+          - id: "Maven:com.fasterxml.jackson.core:jackson-databind:2.10.0"
+            dependencies:
+            - id: "Maven:com.fasterxml.jackson.core:jackson-core:2.10.0"
+        - id: "Maven:org.jetbrains.kotlin:kotlin-reflect:1.3.50"
+          dependencies:
+          - id: "Maven:org.jetbrains.kotlin:kotlin-stdlib:1.3.50"
+            dependencies:
+            - id: "Maven:org.jetbrains.kotlin:kotlin-stdlib-common:1.3.50"
+            - id: "Maven:org.jetbrains:annotations:13.0"
+        - id: "Maven:org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.50"
+          dependencies:
+          - id: "Maven:org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50"
+        - id: "Maven:org.springframework.boot:spring-boot-starter-actuator:2.2.0.RELEASE"
+          dependencies:
+          - id: "Maven:io.micrometer:micrometer-core:1.3.0"
+            dependencies:
+            - id: "Maven:org.hdrhistogram:HdrHistogram:2.1.11"
+            - id: "Maven:org.latencyutils:LatencyUtils:2.0.3"
+          - id: "Maven:org.springframework.boot:spring-boot-actuator-autoconfigure:2.2.0.RELEASE"
+            dependencies:
+            - id: "Maven:com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.0"
+            - id: "Maven:org.springframework.boot:spring-boot-actuator:2.2.0.RELEASE"
+            - id: "Maven:org.springframework:spring-context:5.2.0.RELEASE"
+          - id: "Maven:org.springframework.boot:spring-boot-starter:2.2.0.RELEASE"
+            dependencies:
+            - id: "Maven:jakarta.annotation:jakarta.annotation-api:1.3.5"
+            - id: "Maven:org.springframework.boot:spring-boot-autoconfigure:2.2.0.RELEASE"
+            - id: "Maven:org.springframework.boot:spring-boot-starter-logging:2.2.0.RELEASE"
+              dependencies:
+              - id: "Maven:ch.qos.logback:logback-classic:1.2.3"
+                dependencies:
+                - id: "Maven:ch.qos.logback:logback-core:1.2.3"
+              - id: "Maven:org.apache.logging.log4j:log4j-to-slf4j:2.12.1"
+                dependencies:
+                - id: "Maven:org.apache.logging.log4j:log4j-api:2.12.1"
+              - id: "Maven:org.slf4j:jul-to-slf4j:1.7.28"
+            - id: "Maven:org.springframework.boot:spring-boot:2.2.0.RELEASE"
+            - id: "Maven:org.yaml:snakeyaml:1.25"
+        - id: "Maven:org.springframework.boot:spring-boot-starter-web:2.2.0.RELEASE"
+          dependencies:
+          - id: "Maven:org.springframework.boot:spring-boot-starter-json:2.2.0.RELEASE"
+            dependencies:
+            - id: "Maven:com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.10.0"
+            - id: "Maven:com.fasterxml.jackson.module:jackson-module-parameter-names:2.10.0"
+          - id: "Maven:org.springframework.boot:spring-boot-starter-tomcat:2.2.0.RELEASE"
+            dependencies:
+            - id: "Maven:org.apache.tomcat.embed:tomcat-embed-core:9.0.27"
+            - id: "Maven:org.apache.tomcat.embed:tomcat-embed-el:9.0.27"
+            - id: "Maven:org.apache.tomcat.embed:tomcat-embed-websocket:9.0.27"
+          - id: "Maven:org.springframework.boot:spring-boot-starter-validation:2.2.0.RELEASE"
+            dependencies:
+            - id: "Maven:jakarta.validation:jakarta.validation-api:2.0.1"
+            - id: "Maven:org.hibernate.validator:hibernate-validator:6.0.17.Final"
+              dependencies:
+              - id: "Maven:com.fasterxml:classmate:1.5.0"
+              - id: "Maven:org.jboss.logging:jboss-logging:3.4.1.Final"
+          - id: "Maven:org.springframework:spring-web:5.2.0.RELEASE"
+            dependencies:
+            - id: "Maven:org.springframework:spring-beans:5.2.0.RELEASE"
+          - id: "Maven:org.springframework:spring-webmvc:5.2.0.RELEASE"
+            dependencies:
+            - id: "Maven:org.springframework:spring-aop:5.2.0.RELEASE"
+            - id: "Maven:org.springframework:spring-expression:5.2.0.RELEASE"
+      - name: "test"
+        dependencies:
+        - id: "Maven:org.springframework.boot:spring-boot-starter-test:2.2.0.RELEASE"
+          dependencies:
+          - id: "Maven:com.jayway.jsonpath:json-path:2.4.0"
+            dependencies:
+            - id: "Maven:net.minidev:json-smart:2.3"
+              dependencies:
+              - id: "Maven:net.minidev:accessors-smart:1.2"
+                dependencies:
+                - id: "Maven:org.ow2.asm:asm:5.0.4"
+            - id: "Maven:org.slf4j:slf4j-api:1.7.28"
+          - id: "Maven:jakarta.xml.bind:jakarta.xml.bind-api:2.3.2"
+            dependencies:
+            - id: "Maven:jakarta.activation:jakarta.activation-api:1.2.1"
+          - id: "Maven:org.assertj:assertj-core:3.13.2"
+          - id: "Maven:org.hamcrest:hamcrest:2.1"
+          - id: "Maven:org.junit.jupiter:junit-jupiter:5.5.2"
+            dependencies:
+            - id: "Maven:org.junit.jupiter:junit-jupiter-api:5.5.2"
+              dependencies:
+              - id: "Maven:org.apiguardian:apiguardian-api:1.1.0"
+              - id: "Maven:org.junit.platform:junit-platform-commons:1.5.2"
+              - id: "Maven:org.opentest4j:opentest4j:1.2.0"
+            - id: "Maven:org.junit.jupiter:junit-jupiter-engine:5.5.2"
+              dependencies:
+              - id: "Maven:org.junit.platform:junit-platform-engine:1.5.2"
+            - id: "Maven:org.junit.jupiter:junit-jupiter-params:5.5.2"
+          - id: "Maven:org.mockito:mockito-core:3.1.0"
+            dependencies:
+            - id: "Maven:net.bytebuddy:byte-buddy-agent:1.10.1"
+            - id: "Maven:net.bytebuddy:byte-buddy:1.10.1"
+            - id: "Maven:org.objenesis:objenesis:2.6"
+          - id: "Maven:org.mockito:mockito-junit-jupiter:3.1.0"
+          - id: "Maven:org.skyscreamer:jsonassert:1.5.0"
+            dependencies:
+            - id: "Maven:com.vaadin.external.google:android-json:0.0.20131108.vaadin1"
+          - id: "Maven:org.springframework.boot:spring-boot-test-autoconfigure:2.2.0.RELEASE"
+          - id: "Maven:org.springframework.boot:spring-boot-test:2.2.0.RELEASE"
+          - id: "Maven:org.springframework:spring-core:5.2.0.RELEASE"
+            dependencies:
+            - id: "Maven:org.springframework:spring-jcl:5.2.0.RELEASE"
+          - id: "Maven:org.springframework:spring-test:5.2.0.RELEASE"
+          - id: "Maven:org.xmlunit:xmlunit-core:2.6.3"
+    packages:
+    - package:
+        id: "Maven:ch.qos.logback:logback-classic:1.2.3"
+        purl: "pkg:maven/ch.qos.logback/logback-classic@1.2.3"
+        declared_licenses:
+        - "Eclipse Public License - v 1.0"
+        - "GNU Lesser General Public License"
+        declared_licenses_processed:
+          spdx_expression: "EPL-1.0 AND LGPL-2.1-only"
+        description: "logback-classic module"
+        homepage_url: "http://logback.qos.ch/logback-classic"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar"
+          hash:
+            value: "7c4f3c474fb2c041d8028740440937705ebb473a"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3-sources.jar"
+          hash:
+            value: "cfd5385e0c5ed1c8a5dce57d86e79cf357153a64"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git@github.com:ceki/logback.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "ssh://git@github.com/ceki/logback.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:ch.qos.logback:logback-core:1.2.3"
+        purl: "pkg:maven/ch.qos.logback/logback-core@1.2.3"
+        declared_licenses:
+        - "Eclipse Public License - v 1.0"
+        - "GNU Lesser General Public License"
+        declared_licenses_processed:
+          spdx_expression: "EPL-1.0 AND LGPL-2.1-only"
+        description: "logback-core module"
+        homepage_url: "http://logback.qos.ch/logback-core"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar"
+          hash:
+            value: "864344400c3d4d92dfeb0a305dc87d953677c03c"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3-sources.jar"
+          hash:
+            value: "3ebabe69eba0196af9ad3a814f723fb720b9101e"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git@github.com:ceki/logback.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "ssh://git@github.com/ceki/logback.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:com.fasterxml.jackson.core:jackson-annotations:2.10.0"
+        purl: "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.10.0"
+        declared_licenses:
+        - "The Apache Software License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Core annotations used for value types, used by Jackson data\
+          \ binding package."
+        homepage_url: "http://github.com/FasterXML/jackson"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.10.0/jackson-annotations-2.10.0.jar"
+          hash:
+            value: "e01cfd93b80d6773b3f757c78e756c9755b47b81"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.10.0/jackson-annotations-2.10.0-sources.jar"
+          hash:
+            value: "c8be836b340e2bf48c335cfd68765ab867cfd088"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git@github.com:FasterXML/jackson-annotations.git"
+          revision: "jackson-annotations-2.10.0-try-3"
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "ssh://git@github.com/FasterXML/jackson-annotations.git"
+          revision: "jackson-annotations-2.10.0-try-3"
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:com.fasterxml.jackson.core:jackson-core:2.10.0"
+        purl: "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.10.0"
+        declared_licenses:
+        - "The Apache Software License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Core Jackson processing abstractions (aka Streaming API), implementation\
+          \ for JSON"
+        homepage_url: "https://github.com/FasterXML/jackson-core"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.10.0/jackson-core-2.10.0.jar"
+          hash:
+            value: "4e2c5fa04648ec9772c63e2101c53af6504e624e"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.10.0/jackson-core-2.10.0-sources.jar"
+          hash:
+            value: "379d754e510e25111a823428636be68773fc73c9"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git@github.com:FasterXML/jackson-core.git"
+          revision: "jackson-core-2.10.0"
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "ssh://git@github.com/FasterXML/jackson-core.git"
+          revision: "jackson-core-2.10.0"
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:com.fasterxml.jackson.core:jackson-databind:2.10.0"
+        purl: "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.10.0"
+        declared_licenses:
+        - "The Apache Software License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "General data-binding functionality for Jackson: works on core\
+          \ streaming API"
+        homepage_url: "http://github.com/FasterXML/jackson"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.10.0/jackson-databind-2.10.0.jar"
+          hash:
+            value: "1127c9cf62f2bb3121a3a2a0a1351d251a602117"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.10.0/jackson-databind-2.10.0-sources.jar"
+          hash:
+            value: "465988edbcc098cebd769e2ef110ce57661a27a4"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git@github.com:FasterXML/jackson-databind.git"
+          revision: "jackson-databind-2.10.0"
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "ssh://git@github.com/FasterXML/jackson-databind.git"
+          revision: "jackson-databind-2.10.0"
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.10.0"
+        purl: "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.10.0"
+        declared_licenses:
+        - "The Apache Software License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Add-on module for Jackson (http://jackson.codehaus.org) to support\n\
+          JDK 8 data types."
+        homepage_url: "https://github.com/FasterXML/jackson-modules-java8/jackson-datatype-jdk8"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.10.0/jackson-datatype-jdk8-2.10.0.jar"
+          hash:
+            value: "ac9b5e4ec02f243c580113c0c58564d90432afaa"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.10.0/jackson-datatype-jdk8-2.10.0-sources.jar"
+          hash:
+            value: "7e77a5a26a7a3e293faaf8d4391d8248406cbbe2"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git@github.com:FasterXML/jackson-modules-java8.git"
+          revision: "jackson-modules-java8-2.10.0"
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "ssh://git@github.com/FasterXML/jackson-modules-java8.git"
+          revision: "jackson-modules-java8-2.10.0"
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.0"
+        purl: "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.10.0"
+        declared_licenses:
+        - "The Apache Software License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Add-on module to support JSR-310 (Java 8 Date & Time API) data\
+          \ types."
+        homepage_url: "https://github.com/FasterXML/jackson-modules-java8/jackson-datatype-jsr310"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.0/jackson-datatype-jsr310-2.10.0.jar"
+          hash:
+            value: "946bcb4b3ba9facfb338b1d48c2606225205a70c"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.0/jackson-datatype-jsr310-2.10.0-sources.jar"
+          hash:
+            value: "fa7bb655432311553c9717ef01d1b12989db4090"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git@github.com:FasterXML/jackson-modules-java8.git"
+          revision: "jackson-modules-java8-2.10.0"
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "ssh://git@github.com/FasterXML/jackson-modules-java8.git"
+          revision: "jackson-modules-java8-2.10.0"
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:com.fasterxml.jackson.module:jackson-module-kotlin:2.10.0"
+        purl: "pkg:maven/com.fasterxml.jackson.module/jackson-module-kotlin@2.10.0"
+        declared_licenses:
+        - "The Apache Software License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Add-on module for Jackson (https://github.com/FasterXML/jackson/)\
+          \ to support\n        Kotlin language, specifically introspection of method/constructor\
+          \ parameter names,\n        without having to add explicit property name\
+          \ annotation."
+        homepage_url: "https://github.com/FasterXML/jackson-module-kotlin"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-kotlin/2.10.0/jackson-module-kotlin-2.10.0.jar"
+          hash:
+            value: "7cd439e5302038cf181c6ae9bb19f8a21eae83f9"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-kotlin/2.10.0/jackson-module-kotlin-2.10.0-sources.jar"
+          hash:
+            value: "966c1a1e966bcf41f31d5b8b2b1c47d79dc6a5cb"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git@github.com:FasterXML/jackson-module-kotlin.git"
+          revision: "jackson-module-kotlin-2.10.0"
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "ssh://git@github.com/FasterXML/jackson-module-kotlin.git"
+          revision: "jackson-module-kotlin-2.10.0"
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:com.fasterxml.jackson.module:jackson-module-parameter-names:2.10.0"
+        purl: "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.10.0"
+        declared_licenses:
+        - "The Apache Software License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Add-on module for Jackson (http://jackson.codehaus.org) to support\n\
+          introspection of method/constructor parameter names, without having to add\
+          \ explicit property name annotation."
+        homepage_url: "https://github.com/FasterXML/jackson-modules-java8/jackson-module-parameter-names"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.10.0/jackson-module-parameter-names-2.10.0.jar"
+          hash:
+            value: "d7ae5421ab27486429aeb878b7e3937544d9324a"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.10.0/jackson-module-parameter-names-2.10.0-sources.jar"
+          hash:
+            value: "a52ab29f26c0b5b10b18584971ab78811e0dae0e"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git@github.com:FasterXML/jackson-modules-java8.git"
+          revision: "jackson-modules-java8-2.10.0"
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "ssh://git@github.com/FasterXML/jackson-modules-java8.git"
+          revision: "jackson-modules-java8-2.10.0"
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:com.fasterxml:classmate:1.5.0"
+        purl: "pkg:maven/com.fasterxml/classmate@1.5.0"
+        declared_licenses:
+        - "The Apache Software License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Library for introspecting types with full generic information\n\
+          \        including resolving of field and method types."
+        homepage_url: "http://github.com/FasterXML/java-classmate"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.5.0/classmate-1.5.0.jar"
+          hash:
+            value: "bc2d1d55f28e6dc0801d86cbd195debd81090d33"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.5.0/classmate-1.5.0-sources.jar"
+          hash:
+            value: "553f714c43289f12e395f01d62120cb9ebc6e76f"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git@github.com:FasterXML/java-classmate.git"
+          revision: "classmate-1.5.0"
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "ssh://git@github.com/FasterXML/java-classmate.git"
+          revision: "classmate-1.5.0"
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:com.jayway.jsonpath:json-path:2.4.0"
+        purl: "pkg:maven/com.jayway.jsonpath/json-path@2.4.0"
+        declared_licenses:
+        - "The Apache Software License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Java port of Stefan Goessner JsonPath."
+        homepage_url: "https://github.com/jayway/JsonPath"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar"
+          hash:
+            value: "765a4401ceb2dc8d40553c2075eb80a8fa35c2ae"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0-sources.jar"
+          hash:
+            value: "c43fc506196089da87a7bb36ec847b57072a818b"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/jayway/JsonPath.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/jayway/JsonPath.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:com.vaadin.external.google:android-json:0.0.20131108.vaadin1"
+        purl: "pkg:maven/com.vaadin.external.google/android-json@0.0.20131108.vaadin1"
+        declared_licenses:
+        - "Apache License 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "\_\_JSON (JavaScript Object Notation) is a lightweight data-interchange\
+          \ format.\n      This is the org.json compatible Android implementation\
+          \ extracted from the Android SDK\n   \_"
+        homepage_url: "http://developer.android.com/sdk"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar"
+          hash:
+            value: "fa26d351fe62a6a17f5cda1287c1c6110dec413f"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1-sources.jar"
+          hash:
+            value: "bf42d7e47a3228513b626dd7d37ac6f072aeca4f"
+            algorithm: "SHA-1"
+        vcs:
+          type: "http"
+          url: "http://developer.android.com/sdk/"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "http"
+          url: "http://developer.android.com/sdk"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:io.micrometer:micrometer-core:1.3.0"
+        purl: "pkg:maven/io.micrometer/micrometer-core@1.3.0"
+        declared_licenses:
+        - "The Apache Software License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Application monitoring instrumentation facade"
+        homepage_url: "https://github.com/micrometer-metrics/micrometer"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/io/micrometer/micrometer-core/1.3.0/micrometer-core-1.3.0.jar"
+          hash:
+            value: "2d6b521afd7410f3b03640a7a109935d9ebf8025"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/io/micrometer/micrometer-core/1.3.0/micrometer-core-1.3.0-sources.jar"
+          hash:
+            value: "214829ef4ff1bad51d2b73cf941d5127c4d7f171"
+            algorithm: "SHA-1"
+        vcs:
+          type: ""
+          url: ""
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/micrometer-metrics/micrometer.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:jakarta.activation:jakarta.activation-api:1.2.1"
+        purl: "pkg:maven/jakarta.activation/jakarta.activation-api@1.2.1"
+        declared_licenses:
+        - "EDL 1.0"
+        declared_licenses_processed:
+          unmapped:
+          - "EDL 1.0"
+        description: "JavaBeans Activation Framework API jar"
+        homepage_url: "https://github.com/eclipse-ee4j/jaf/jakarta.activation-api"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar"
+          hash:
+            value: "562a587face36ec7eff2db7f2fc95425c6602bc1"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1-sources.jar"
+          hash:
+            value: "6fe481428613e57af220e17b9ebf3475fb27efb8"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "ssh://git@github.com/eclipse/jaf.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "ssh://git@github.com/eclipse/jaf.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:jakarta.annotation:jakarta.annotation-api:1.3.5"
+        purl: "pkg:maven/jakarta.annotation/jakarta.annotation-api@1.3.5"
+        declared_licenses:
+        - "EPL 2.0"
+        - "GPL2 w/ CPE"
+        declared_licenses_processed:
+          spdx_expression: "EPL-2.0 AND GPL-2.0-only WITH Classpath-exception-2.0"
+        description: "Jakarta Annotations API"
+        homepage_url: "https://projects.eclipse.org/projects/ee4j.ca"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar"
+          hash:
+            value: "59eb84ee0d616332ff44aba065f3888cf002cd2d"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5-sources.jar"
+          hash:
+            value: "01ad35f11d17abb52426bfe15ea7b4c583795012"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "https://github.com/eclipse-ee4j/common-annotations-api.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/eclipse-ee4j/common-annotations-api.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:jakarta.validation:jakarta.validation-api:2.0.1"
+        purl: "pkg:maven/jakarta.validation/jakarta.validation-api@2.0.1"
+        declared_licenses:
+        - "Apache License 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Bean Validation API"
+        homepage_url: "http://beanvalidation.org"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/jakarta/validation/jakarta.validation-api/2.0.1/jakarta.validation-api-2.0.1.jar"
+          hash:
+            value: "5a864a58587cd76243b8ec55dd7115c9eac25c08"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/jakarta/validation/jakarta.validation-api/2.0.1/jakarta.validation-api-2.0.1-sources.jar"
+          hash:
+            value: "56f21cc15c2d307b5438ffef507ce42b740efeea"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/beanvalidation/beanvalidation-api.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/beanvalidation/beanvalidation-api.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:jakarta.xml.bind:jakarta.xml.bind-api:2.3.2"
+        purl: "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@2.3.2"
+        declared_licenses:
+        - "Eclipse Distribution License - v 1.0"
+        declared_licenses_processed:
+          spdx_expression: "BSD-3-Clause"
+        description: "JAXB (JSR 222) API"
+        homepage_url: "https://github.com/eclipse-ee4j/jaxb-api/jakarta.xml.bind-api"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar"
+          hash:
+            value: "8d49996a4338670764d7ca4b85a1c4ccf7fe665d"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2-sources.jar"
+          hash:
+            value: "8f7b9baa75556d2c03371c7e4b45b484683c7d28"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/eclipse-ee4j/jaxb-api.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/eclipse-ee4j/jaxb-api.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:net.bytebuddy:byte-buddy-agent:1.10.1"
+        purl: "pkg:maven/net.bytebuddy/byte-buddy-agent@1.10.1"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "The Byte Buddy agent offers convenience for attaching an agent\
+          \ to the local or a remote VM."
+        homepage_url: "https://bytebuddy.net/byte-buddy-agent"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.10.1/byte-buddy-agent-1.10.1.jar"
+          hash:
+            value: "9b7d95d699d08e92eb51a29b4949ae975325b40b"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.10.1/byte-buddy-agent-1.10.1-sources.jar"
+          hash:
+            value: "84d8ce133b2008b2b56cac24bb271694c82f5122"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git@github.com:raphw/byte-buddy.git"
+          revision: "byte-buddy-1.10.1"
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "ssh://git@github.com/raphw/byte-buddy.git"
+          revision: "byte-buddy-1.10.1"
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:net.bytebuddy:byte-buddy:1.10.1"
+        purl: "pkg:maven/net.bytebuddy/byte-buddy@1.10.1"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Byte Buddy is a Java library for creating Java classes at run\
+          \ time.\n        This artifact is a build of Byte Buddy with all ASM dependencies\
+          \ repackaged into its own name space."
+        homepage_url: "https://bytebuddy.net/byte-buddy"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.10.1/byte-buddy-1.10.1.jar"
+          hash:
+            value: "11fe565e2b8b857c9dcee66e4170b97abb92530b"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.10.1/byte-buddy-1.10.1-sources.jar"
+          hash:
+            value: "ed9fcc95292b131853b234e389459cf8a4c78f44"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git@github.com:raphw/byte-buddy.git"
+          revision: "byte-buddy-1.10.1"
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "ssh://git@github.com/raphw/byte-buddy.git"
+          revision: "byte-buddy-1.10.1"
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:net.minidev:accessors-smart:1.2"
+        purl: "pkg:maven/net.minidev/accessors-smart@1.2"
+        declared_licenses:
+        - "The Apache Software License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Java reflect give poor performance on getter setter an constructor\
+          \ calls, accessors-smart use ASM to speed up those calls."
+        homepage_url: "http://www.minidev.net/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar"
+          hash:
+            value: "c592b500269bfde36096641b01238a8350f8aa31"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/net/minidev/accessors-smart/1.2/accessors-smart-1.2-sources.jar"
+          hash:
+            value: "c837e3903ff07b478041f761915d764b98e71e05"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "https://github.com/netplex/json-smart-v2.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/netplex/json-smart-v2.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:net.minidev:json-smart:2.3"
+        purl: "pkg:maven/net.minidev/json-smart@2.3"
+        declared_licenses:
+        - "The Apache Software License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "JSON (JavaScript Object Notation) is a lightweight data-interchange\
+          \ format. It is easy for humans to read and write. It is easy for machines\
+          \ to parse and generate. It is based on a subset of the JavaScript Programming\
+          \ Language, Standard ECMA-262 3rd Edition - December 1999. JSON is a text\
+          \ format that is completely language independent but uses conventions that\
+          \ are familiar to programmers of the C-family of languages, including C,\
+          \ C++, C#, Java, JavaScript, Perl, Python, and many others. These properties\
+          \ make JSON an ideal data-interchange language."
+        homepage_url: "http://www.minidev.net/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/net/minidev/json-smart/2.3/json-smart-2.3.jar"
+          hash:
+            value: "007396407491352ce4fa30de92efb158adb76b5b"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/net/minidev/json-smart/2.3/json-smart-2.3-sources.jar"
+          hash:
+            value: "36c61f1b839bde5b284528cb76f6811efbe0f08b"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "https://github.com/netplex/json-smart-v2.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/netplex/json-smart-v2.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.apache.logging.log4j:log4j-api:2.12.1"
+        purl: "pkg:maven/org.apache.logging.log4j/log4j-api@2.12.1"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "The Apache Log4j API"
+        homepage_url: "https://logging.apache.org/log4j/2.x/log4j-api/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.12.1/log4j-api-2.12.1.jar"
+          hash:
+            value: "a55e6d987f50a515c9260b0451b4fa217dc539cb"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.12.1/log4j-api-2.12.1-sources.jar"
+          hash:
+            value: "72dbe5460db61664f6bbfffb36665fa0bbe8e3ad"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "https://git-wip-us.apache.org/repos/asf/logging-log4j2.git"
+          revision: "log4j-2.12.1-rc1"
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://git-wip-us.apache.org/repos/asf/logging-log4j2.git"
+          revision: "log4j-2.12.1-rc1"
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.apache.logging.log4j:log4j-to-slf4j:2.12.1"
+        purl: "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.12.1"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "The Apache Log4j binding between Log4j 2 API and SLF4J."
+        homepage_url: "https://logging.apache.org/log4j/2.x/log4j-to-slf4j/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-to-slf4j/2.12.1/log4j-to-slf4j-2.12.1.jar"
+          hash:
+            value: "dfb42ea8ce1a399bcf7218efe8115a0b7ab3788a"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-to-slf4j/2.12.1/log4j-to-slf4j-2.12.1-sources.jar"
+          hash:
+            value: "163f67b05f1c43ebb5204b9ef5f1e6767360cff0"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "https://git-wip-us.apache.org/repos/asf/logging-log4j2.git"
+          revision: "log4j-2.12.1-rc1"
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://git-wip-us.apache.org/repos/asf/logging-log4j2.git"
+          revision: "log4j-2.12.1-rc1"
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.apache.tomcat.embed:tomcat-embed-core:9.0.27"
+        purl: "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@9.0.27"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Core Tomcat implementation"
+        homepage_url: "https://tomcat.apache.org/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-core/9.0.27/tomcat-embed-core-9.0.27.jar"
+          hash:
+            value: "f1bb28625eb8e10ba05081ec840f49a2ea520d85"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-core/9.0.27/tomcat-embed-core-9.0.27-sources.jar"
+          hash:
+            value: "19aa5cabb190dc60ebd3e236300de4988be832ab"
+            algorithm: "SHA-1"
+        vcs:
+          type: ""
+          url: ""
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: ""
+          url: ""
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.apache.tomcat.embed:tomcat-embed-el:9.0.27"
+        purl: "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@9.0.27"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Core Tomcat implementation"
+        homepage_url: "https://tomcat.apache.org/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-el/9.0.27/tomcat-embed-el-9.0.27.jar"
+          hash:
+            value: "9123115b6d11187154d9f462c89c0b0fce171ade"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-el/9.0.27/tomcat-embed-el-9.0.27-sources.jar"
+          hash:
+            value: "382c516308f27f0a31dc557cb933c570a863b363"
+            algorithm: "SHA-1"
+        vcs:
+          type: ""
+          url: ""
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: ""
+          url: ""
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.apache.tomcat.embed:tomcat-embed-websocket:9.0.27"
+        purl: "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@9.0.27"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Core Tomcat implementation"
+        homepage_url: "https://tomcat.apache.org/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.27/tomcat-embed-websocket-9.0.27.jar"
+          hash:
+            value: "8d2b93a8621a83d9283a46cae09d8f87bea877fa"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.27/tomcat-embed-websocket-9.0.27-sources.jar"
+          hash:
+            value: "8421312699b155ddd7b7f32f78d4b9dfc8b478f9"
+            algorithm: "SHA-1"
+        vcs:
+          type: ""
+          url: ""
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: ""
+          url: ""
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.apiguardian:apiguardian-api:1.1.0"
+        purl: "pkg:maven/org.apiguardian/apiguardian-api@1.1.0"
+        declared_licenses:
+        - "The Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "@API Guardian"
+        homepage_url: "https://github.com/apiguardian-team/apiguardian"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar"
+          hash:
+            value: "fc9dff4bb36d627bdc553de77e1f17efd790876c"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0-sources.jar"
+          hash:
+            value: "f3c15fe970af864390c8d0634c9f16aca1b064a8"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/apiguardian-team/apiguardian.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/apiguardian-team/apiguardian.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.assertj:assertj-core:3.13.2"
+        purl: "pkg:maven/org.assertj/assertj-core@3.13.2"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Rich and fluent assertions for testing for Java"
+        homepage_url: "http://assertj.org/assertj-core"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.13.2/assertj-core-3.13.2.jar"
+          hash:
+            value: "bb7b963fe752f69f055df0025691eceb83ce0c5d"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.13.2/assertj-core-3.13.2-sources.jar"
+          hash:
+            value: "0616a8ca81b9a1a58e3c8cd8c5d7395eb548ce57"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git@github.com:joel-costigliola/assertj-core.git"
+          revision: "assertj-core-3.13.2"
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "ssh://git@github.com/joel-costigliola/assertj-core.git"
+          revision: "assertj-core-3.13.2"
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.hamcrest:hamcrest:2.1"
+        purl: "pkg:maven/org.hamcrest/hamcrest@2.1"
+        declared_licenses:
+        - "BSD Licence 3"
+        declared_licenses_processed:
+          spdx_expression: "BSD-3-Clause"
+        description: "Core API and libraries of hamcrest matcher framework."
+        homepage_url: "http://hamcrest.org/JavaHamcrest/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar"
+          hash:
+            value: "9420ba32c29217b54eebd26ff7f9234d31c3fbb2"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest/2.1/hamcrest-2.1-sources.jar"
+          hash:
+            value: "aa6763235632b77fd9245c850b6a7dc09382314c"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git@github.com:hamcrest/JavaHamcrest.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "ssh://git@github.com/hamcrest/JavaHamcrest.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.hdrhistogram:HdrHistogram:2.1.11"
+        purl: "pkg:maven/org.hdrhistogram/HdrHistogram@2.1.11"
+        declared_licenses:
+        - "BSD-2-Clause"
+        - "Public Domain, per Creative Commons CC0"
+        declared_licenses_processed:
+          spdx_expression: "BSD-2-Clause AND CC0-1.0"
+        description: "HdrHistogram supports the recording and analyzing sampled data\
+          \ value\n        counts across a configurable integer value range with configurable\
+          \ value\n        precision within the range. Value precision is expressed\
+          \ as the number of\n        significant digits in the value recording, and\
+          \ provides control over value\n        quantization behavior across the\
+          \ value range and the subsequent value\n        resolution at any given\
+          \ level."
+        homepage_url: "http://hdrhistogram.github.io/HdrHistogram/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/hdrhistogram/HdrHistogram/2.1.11/HdrHistogram-2.1.11.jar"
+          hash:
+            value: "1b035a1a4ce5d3441a4a1a331d04839ef487ec49"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/hdrhistogram/HdrHistogram/2.1.11/HdrHistogram-2.1.11-sources.jar"
+          hash:
+            value: "001e2b67a2c9d8314c86800384e6ba6694225593"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/HdrHistogram/HdrHistogram.git"
+          revision: "HdrHistogram-2.1.11"
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/HdrHistogram/HdrHistogram.git"
+          revision: "HdrHistogram-2.1.11"
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.hibernate.validator:hibernate-validator:6.0.17.Final"
+        purl: "pkg:maven/org.hibernate.validator/hibernate-validator@6.0.17.Final"
+        declared_licenses:
+        - "Apache License 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Hibernate's Bean Validation (JSR-380) reference implementation."
+        homepage_url: "http://hibernate.org/validator/hibernate-validator"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/hibernate/validator/hibernate-validator/6.0.17.Final/hibernate-validator-6.0.17.Final.jar"
+          hash:
+            value: "0af73055fc4a103ab347c56e7da5a143d68a0170"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/hibernate/validator/hibernate-validator/6.0.17.Final/hibernate-validator-6.0.17.Final-sources.jar"
+          hash:
+            value: "7018c4feae164e19041a968e4d1e5576008b264f"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/hibernate/hibernate-validator.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/hibernate/hibernate-validator.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.jboss.logging:jboss-logging:3.4.1.Final"
+        purl: "pkg:maven/org.jboss.logging/jboss-logging@3.4.1.Final"
+        declared_licenses:
+        - "Apache License, version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "The JBoss Logging Framework"
+        homepage_url: "http://www.jboss.org"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar"
+          hash:
+            value: "40fd4d696c55793e996d1ff3c475833f836c2498"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final-sources.jar"
+          hash:
+            value: "4d6248596305dc87ac99451b9c234dba37eac15d"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/jboss-logging/jboss-logging.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/jboss-logging/jboss-logging.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.jetbrains.kotlin:kotlin-reflect:1.3.50"
+        purl: "pkg:maven/org.jetbrains.kotlin/kotlin-reflect@1.3.50"
+        declared_licenses:
+        - "The Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Kotlin Full Reflection Library"
+        homepage_url: "https://kotlinlang.org/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-reflect/1.3.50/kotlin-reflect-1.3.50.jar"
+          hash:
+            value: "b499f22fd7c3e9c2e5b6c4005221fa47fc7f9a7a"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-reflect/1.3.50/kotlin-reflect-1.3.50-sources.jar"
+          hash:
+            value: "4e1686609dbfe77db1072774f0d38ab82b67206b"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "https://github.com/JetBrains/kotlin.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/JetBrains/kotlin.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.jetbrains.kotlin:kotlin-stdlib-common:1.3.50"
+        purl: "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.3.50"
+        declared_licenses:
+        - "The Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Kotlin Common Standard Library"
+        homepage_url: "https://kotlinlang.org/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.3.50/kotlin-stdlib-common-1.3.50.jar"
+          hash:
+            value: "3d9cd3e1bc7b92e95f43d45be3bfbcf38e36ab87"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.3.50/kotlin-stdlib-common-1.3.50-sources.jar"
+          hash:
+            value: "8ac406cf33e942265c4abb33ee0acdee79292dd6"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "https://github.com/JetBrains/kotlin.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/JetBrains/kotlin.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50"
+        purl: "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.3.50"
+        declared_licenses:
+        - "The Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Kotlin Standard Library JDK 7 extension"
+        homepage_url: "https://kotlinlang.org/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.3.50/kotlin-stdlib-jdk7-1.3.50.jar"
+          hash:
+            value: "50ad05ea1c2595fb31b800e76db464d08d599af3"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.3.50/kotlin-stdlib-jdk7-1.3.50-sources.jar"
+          hash:
+            value: "854725f0e8cdf688647bdc9022d1b32228fefc14"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "https://github.com/JetBrains/kotlin.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/JetBrains/kotlin.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.50"
+        purl: "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk8@1.3.50"
+        declared_licenses:
+        - "The Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Kotlin Standard Library JDK 8 extension"
+        homepage_url: "https://kotlinlang.org/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.3.50/kotlin-stdlib-jdk8-1.3.50.jar"
+          hash:
+            value: "bf65725d4ae2cf00010d84e945fcbc201f590e11"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.3.50/kotlin-stdlib-jdk8-1.3.50-sources.jar"
+          hash:
+            value: "e1eaa82220f14bd12ae0bf211a08b2bad5700e20"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "https://github.com/JetBrains/kotlin.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/JetBrains/kotlin.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.jetbrains.kotlin:kotlin-stdlib:1.3.50"
+        purl: "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib@1.3.50"
+        declared_licenses:
+        - "The Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Kotlin Standard Library for JVM"
+        homepage_url: "https://kotlinlang.org/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.3.50/kotlin-stdlib-1.3.50.jar"
+          hash:
+            value: "b529d1738c7e98bbfa36a4134039528f2ce78ebf"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.3.50/kotlin-stdlib-1.3.50-sources.jar"
+          hash:
+            value: "bc0c767786c4a3c042a364e69d3f3dd5ff5253a5"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "https://github.com/JetBrains/kotlin.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/JetBrains/kotlin.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.jetbrains:annotations:13.0"
+        purl: "pkg:maven/org.jetbrains/annotations@13.0"
+        declared_licenses:
+        - "The Apache Software License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "A set of annotations used for code inspection support and code\
+          \ documentation."
+        homepage_url: "http://www.jetbrains.org"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/jetbrains/annotations/13.0/annotations-13.0.jar"
+          hash:
+            value: "919f0dfe192fb4e063e7dacadee7f8bb9a2672a9"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/jetbrains/annotations/13.0/annotations-13.0-sources.jar"
+          hash:
+            value: "5991ca87ef1fb5544943d9abc5a9a37583fabe03"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "https://github.com/JetBrains/intellij-community.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/JetBrains/intellij-community.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.junit.jupiter:junit-jupiter-api:5.5.2"
+        purl: "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.5.2"
+        declared_licenses:
+        - "Eclipse Public License v2.0"
+        declared_licenses_processed:
+          spdx_expression: "EPL-2.0"
+        description: "Module \"junit-jupiter-api\" of JUnit 5."
+        homepage_url: "https://junit.org/junit5/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.5.2/junit-jupiter-api-5.5.2.jar"
+          hash:
+            value: "6393db7e4c0265152d8fc4ff146633d1a7d36c47"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.5.2/junit-jupiter-api-5.5.2-sources.jar"
+          hash:
+            value: "22b57242e953bf2de96fd5a122bd697f18b2fcd2"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/junit-team/junit5.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/junit-team/junit5.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.junit.jupiter:junit-jupiter-engine:5.5.2"
+        purl: "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.5.2"
+        declared_licenses:
+        - "Eclipse Public License v2.0"
+        declared_licenses_processed:
+          spdx_expression: "EPL-2.0"
+        description: "Module \"junit-jupiter-engine\" of JUnit 5."
+        homepage_url: "https://junit.org/junit5/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.5.2/junit-jupiter-engine-5.5.2.jar"
+          hash:
+            value: "f597408bde45371548f9e9791da7981a1134328d"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.5.2/junit-jupiter-engine-5.5.2-sources.jar"
+          hash:
+            value: "44d1543a802a072d87cc146d9d96223d61683617"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/junit-team/junit5.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/junit-team/junit5.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.junit.jupiter:junit-jupiter-params:5.5.2"
+        purl: "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.5.2"
+        declared_licenses:
+        - "Eclipse Public License v2.0"
+        declared_licenses_processed:
+          spdx_expression: "EPL-2.0"
+        description: "Module \"junit-jupiter-params\" of JUnit 5."
+        homepage_url: "https://junit.org/junit5/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-params/5.5.2/junit-jupiter-params-5.5.2.jar"
+          hash:
+            value: "e0659722923bd9fdfa08602e2da22bd5a9d354e8"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-params/5.5.2/junit-jupiter-params-5.5.2-sources.jar"
+          hash:
+            value: "f68669855d3dcfd6f6087faf53a5a503def5d09b"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/junit-team/junit5.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/junit-team/junit5.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.junit.jupiter:junit-jupiter:5.5.2"
+        purl: "pkg:maven/org.junit.jupiter/junit-jupiter@5.5.2"
+        declared_licenses:
+        - "Eclipse Public License v2.0"
+        declared_licenses_processed:
+          spdx_expression: "EPL-2.0"
+        description: "Module \"junit-jupiter\" of JUnit 5."
+        homepage_url: "https://junit.org/junit5/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter/5.5.2/junit-jupiter-5.5.2.jar"
+          hash:
+            value: "f8561a498ec26b24a3a64aebb6b2307fed000a33"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter/5.5.2/junit-jupiter-5.5.2-sources.jar"
+          hash:
+            value: "439f4fd746bc3c4f4003ec7b5774e474b3fca0e5"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/junit-team/junit5.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/junit-team/junit5.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.junit.platform:junit-platform-commons:1.5.2"
+        purl: "pkg:maven/org.junit.platform/junit-platform-commons@1.5.2"
+        declared_licenses:
+        - "Eclipse Public License v2.0"
+        declared_licenses_processed:
+          spdx_expression: "EPL-2.0"
+        description: "Module \"junit-platform-commons\" of JUnit 5."
+        homepage_url: "https://junit.org/junit5/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.5.2/junit-platform-commons-1.5.2.jar"
+          hash:
+            value: "9703df63b65d415b2a027d43ce908c625b3aedce"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.5.2/junit-platform-commons-1.5.2-sources.jar"
+          hash:
+            value: "32912ebbdeda6dcc83fe50d0ca112a930a777b5f"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/junit-team/junit5.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/junit-team/junit5.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.junit.platform:junit-platform-engine:1.5.2"
+        purl: "pkg:maven/org.junit.platform/junit-platform-engine@1.5.2"
+        declared_licenses:
+        - "Eclipse Public License v2.0"
+        declared_licenses_processed:
+          spdx_expression: "EPL-2.0"
+        description: "Module \"junit-platform-engine\" of JUnit 5."
+        homepage_url: "https://junit.org/junit5/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.5.2/junit-platform-engine-1.5.2.jar"
+          hash:
+            value: "d5697f6ebe0b4d08c0210b5b98b4e1a40f40dfc6"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.5.2/junit-platform-engine-1.5.2-sources.jar"
+          hash:
+            value: "6fc5769022fca2530aa2372824a2784a1e741d3f"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/junit-team/junit5.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/junit-team/junit5.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.latencyutils:LatencyUtils:2.0.3"
+        purl: "pkg:maven/org.latencyutils/LatencyUtils@2.0.3"
+        declared_licenses:
+        - "Public Domain, per Creative Commons CC0"
+        declared_licenses_processed:
+          spdx_expression: "CC0-1.0"
+        description: "LatencyUtils is a package that provides latency recording and\
+          \ reporting utilities."
+        homepage_url: "http://latencyutils.github.io/LatencyUtils/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar"
+          hash:
+            value: "769c0b82cb2421c8256300e907298a9410a2a3d3"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3-sources.jar"
+          hash:
+            value: "fbc38259e2077a428984637d811dac542a6a913e"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/LatencyUtils/LatencyUtils.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/LatencyUtils/LatencyUtils.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.mockito:mockito-core:3.1.0"
+        purl: "pkg:maven/org.mockito/mockito-core@3.1.0"
+        declared_licenses:
+        - "The MIT License"
+        declared_licenses_processed:
+          spdx_expression: "MIT"
+        description: "Mockito mock objects library core API and implementation"
+        homepage_url: "https://github.com/mockito/mockito"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/mockito/mockito-core/3.1.0/mockito-core-3.1.0.jar"
+          hash:
+            value: "53137a5fccdccb0d907d409dc68a282aab87c968"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/mockito/mockito-core/3.1.0/mockito-core-3.1.0-sources.jar"
+          hash:
+            value: "30e8ff3451ac57bc46f5954f667378bc3f85b8f5"
+            algorithm: "SHA-1"
+        vcs:
+          type: ""
+          url: ""
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/mockito/mockito.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.mockito:mockito-junit-jupiter:3.1.0"
+        purl: "pkg:maven/org.mockito/mockito-junit-jupiter@3.1.0"
+        declared_licenses:
+        - "The MIT License"
+        declared_licenses_processed:
+          spdx_expression: "MIT"
+        description: "Mockito JUnit 5 support"
+        homepage_url: "https://github.com/mockito/mockito"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/mockito/mockito-junit-jupiter/3.1.0/mockito-junit-jupiter-3.1.0.jar"
+          hash:
+            value: "3c181fd8296b86671a8a466b642ba564b1237c13"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/mockito/mockito-junit-jupiter/3.1.0/mockito-junit-jupiter-3.1.0-sources.jar"
+          hash:
+            value: "524a60d9b113dfc3e7500f7f16e1d0adbadcd599"
+            algorithm: "SHA-1"
+        vcs:
+          type: ""
+          url: ""
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/mockito/mockito.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.objenesis:objenesis:2.6"
+        purl: "pkg:maven/org.objenesis/objenesis@2.6"
+        declared_licenses:
+        - "Apache 2"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "A library for instantiating Java objects"
+        homepage_url: "http://objenesis.org"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/objenesis/objenesis/2.6/objenesis-2.6.jar"
+          hash:
+            value: "639033469776fd37c08358c6b92a4761feb2af4b"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/objenesis/objenesis/2.6/objenesis-2.6-sources.jar"
+          hash:
+            value: "96614f514a1031296657bf0dde452dc15e42fcb8"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "https://github.com/easymock/objenesis.git"
+          revision: "2.6"
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/easymock/objenesis.git"
+          revision: "2.6"
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.opentest4j:opentest4j:1.2.0"
+        purl: "pkg:maven/org.opentest4j/opentest4j@1.2.0"
+        declared_licenses:
+        - "The Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Open Test Alliance for the JVM"
+        homepage_url: "https://github.com/ota4j-team/opentest4j"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar"
+          hash:
+            value: "28c11eb91f9b6d8e200631d46e20a7f407f2a046"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0-sources.jar"
+          hash:
+            value: "41d55b3c2254de9837b4ec8923cbd371b8a7eab5"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/ota4j-team/opentest4j.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/ota4j-team/opentest4j.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.ow2.asm:asm:5.0.4"
+        purl: "pkg:maven/org.ow2.asm/asm@5.0.4"
+        declared_licenses:
+        - "BSD"
+        declared_licenses_processed:
+          spdx_expression: "BSD-3-Clause"
+        description: "A very small and fast Java bytecode manipulation framework"
+        homepage_url: "http://asm.objectweb.org/asm/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar"
+          hash:
+            value: "0da08b8cce7bbf903602a25a3a163ae252435795"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/ow2/asm/asm/5.0.4/asm-5.0.4-sources.jar"
+          hash:
+            value: "112ff54474f1f04ccf1384c92e39fdc566f0bb5e"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Subversion"
+          url: "svn://svn.forge.objectweb.org/svnroot/asm/trunk"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Subversion"
+          url: "svn://svn.forge.objectweb.org/svnroot/asm/trunk"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.skyscreamer:jsonassert:1.5.0"
+        purl: "pkg:maven/org.skyscreamer/jsonassert@1.5.0"
+        declared_licenses:
+        - "The Apache Software License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "A library to develop RESTful but flexible APIs"
+        homepage_url: "https://github.com/skyscreamer/JSONassert"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar"
+          hash:
+            value: "6c9d5fe2f59da598d9aefc1cfc6528ff3cf32df3"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0-sources.jar"
+          hash:
+            value: "d729b258165a2fd9b5d6156c05c4c4f7ca053117"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git@github.com:skyscreamer/JSONassert.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "ssh://git@github.com/skyscreamer/JSONassert.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.slf4j:jul-to-slf4j:1.7.28"
+        purl: "pkg:maven/org.slf4j/jul-to-slf4j@1.7.28"
+        declared_licenses:
+        - "MIT License"
+        declared_licenses_processed:
+          spdx_expression: "MIT"
+        description: "JUL to SLF4J bridge"
+        homepage_url: "http://www.slf4j.org"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/slf4j/jul-to-slf4j/1.7.28/jul-to-slf4j-1.7.28.jar"
+          hash:
+            value: "c6f06c420ad62d3824b38a06dfdce9fb55ba81ef"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/slf4j/jul-to-slf4j/1.7.28/jul-to-slf4j-1.7.28-sources.jar"
+          hash:
+            value: "38e319ad85f5b34c10429493902c25c8859ab9b2"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git@github.com:qos-ch/slf4j.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "ssh://git@github.com/qos-ch/slf4j.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.slf4j:slf4j-api:1.7.28"
+        purl: "pkg:maven/org.slf4j/slf4j-api@1.7.28"
+        declared_licenses:
+        - "MIT License"
+        declared_licenses_processed:
+          spdx_expression: "MIT"
+        description: "The slf4j API"
+        homepage_url: "http://www.slf4j.org"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.28/slf4j-api-1.7.28.jar"
+          hash:
+            value: "2cd9b264f76e3d087ee21bfc99305928e1bdb443"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.28/slf4j-api-1.7.28-sources.jar"
+          hash:
+            value: "6444f3c8fce32e20f621e264807256c5e65f11c9"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git@github.com:qos-ch/slf4j.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "ssh://git@github.com/qos-ch/slf4j.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework.boot:spring-boot-actuator-autoconfigure:2.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework.boot/spring-boot-actuator-autoconfigure@2.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Spring Boot Actuator AutoConfigure"
+        homepage_url: "https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-actuator-autoconfigure"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator-autoconfigure/2.2.0.RELEASE/spring-boot-actuator-autoconfigure-2.2.0.RELEASE.jar"
+          hash:
+            value: "e14cf22893fd1e69e5d0fd97a957f55173588c00"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator-autoconfigure/2.2.0.RELEASE/spring-boot-actuator-autoconfigure-2.2.0.RELEASE-sources.jar"
+          hash:
+            value: "c03fa14f912ec0a3728be4d5d257356e0c453ecc"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework.boot:spring-boot-actuator:2.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework.boot/spring-boot-actuator@2.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Spring Boot Actuator"
+        homepage_url: "https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-actuator"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator/2.2.0.RELEASE/spring-boot-actuator-2.2.0.RELEASE.jar"
+          hash:
+            value: "dd07ae297f94ad928bf24bbdfc4369d92a9d5014"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator/2.2.0.RELEASE/spring-boot-actuator-2.2.0.RELEASE-sources.jar"
+          hash:
+            value: "a85b5d4a99580daa169952a94d9af14132740ab3"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework.boot:spring-boot-autoconfigure:2.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@2.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Spring Boot AutoConfigure"
+        homepage_url: "https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-autoconfigure"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.2.0.RELEASE/spring-boot-autoconfigure-2.2.0.RELEASE.jar"
+          hash:
+            value: "1b3304eec25bb9860bd091a31133e3fe139fcab6"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.2.0.RELEASE/spring-boot-autoconfigure-2.2.0.RELEASE-sources.jar"
+          hash:
+            value: "5ec87772eba5f1fc1736579001e6c249e3f64e73"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework.boot:spring-boot-starter-actuator:2.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework.boot/spring-boot-starter-actuator@2.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Starter for using Spring Boot's Actuator which provides production\n\
+          \t\tready features to help you monitor and manage your application"
+        homepage_url: "https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-starters/spring-boot-starter-actuator"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-actuator/2.2.0.RELEASE/spring-boot-starter-actuator-2.2.0.RELEASE.jar"
+          hash:
+            value: "fcb1f26ba02ca563273d5f8e190b8e22b64c0e4c"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-actuator/2.2.0.RELEASE/spring-boot-starter-actuator-2.2.0.RELEASE-sources.jar"
+          hash:
+            value: "112baf77e76f1ae0910ef2ea6e302c523bec3912"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework.boot:spring-boot-starter-json:2.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework.boot/spring-boot-starter-json@2.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Starter for reading and writing json"
+        homepage_url: "https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-starters/spring-boot-starter-json"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-json/2.2.0.RELEASE/spring-boot-starter-json-2.2.0.RELEASE.jar"
+          hash:
+            value: "72459189c5a602f1e651c8e2a4547889dc691139"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-json/2.2.0.RELEASE/spring-boot-starter-json-2.2.0.RELEASE-sources.jar"
+          hash:
+            value: "c7368357f5f89823408517886ab66873624672d9"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework.boot:spring-boot-starter-logging:2.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework.boot/spring-boot-starter-logging@2.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Starter for logging using Logback. Default logging starter"
+        homepage_url: "https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-starters/spring-boot-starter-logging"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/2.2.0.RELEASE/spring-boot-starter-logging-2.2.0.RELEASE.jar"
+          hash:
+            value: "d41e211e1d8705754635b698a7bf9ab9ff196a5f"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/2.2.0.RELEASE/spring-boot-starter-logging-2.2.0.RELEASE-sources.jar"
+          hash:
+            value: "deb582ae46d66017330e64136fb7469d546ba701"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework.boot:spring-boot-starter-test:2.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework.boot/spring-boot-starter-test@2.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Starter for testing Spring Boot applications with libraries\
+          \ including\n\t\tJUnit, Hamcrest and Mockito"
+        homepage_url: "https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-starters/spring-boot-starter-test"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/2.2.0.RELEASE/spring-boot-starter-test-2.2.0.RELEASE.jar"
+          hash:
+            value: "adf88f026e9b9876f93dce5b1adcd5ab65dad962"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/2.2.0.RELEASE/spring-boot-starter-test-2.2.0.RELEASE-sources.jar"
+          hash:
+            value: "a9440c446f8a5ac74d541d7a70435c4fc5c0f42b"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework.boot:spring-boot-starter-tomcat:2.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@2.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Starter for using Tomcat as the embedded servlet container.\
+          \ Default\n\t\tservlet container starter used by spring-boot-starter-web"
+        homepage_url: "https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-starters/spring-boot-starter-tomcat"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/2.2.0.RELEASE/spring-boot-starter-tomcat-2.2.0.RELEASE.jar"
+          hash:
+            value: "e305bc0fec134a639c10c9d48885db88951ea318"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/2.2.0.RELEASE/spring-boot-starter-tomcat-2.2.0.RELEASE-sources.jar"
+          hash:
+            value: "306bf6a9a5f4f8e8ee0b34bac22a9683caa2bf49"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework.boot:spring-boot-starter-validation:2.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework.boot/spring-boot-starter-validation@2.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Starter for using Java Bean Validation with Hibernate\n\t\t\
+          Validator"
+        homepage_url: "https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-starters/spring-boot-starter-validation"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/2.2.0.RELEASE/spring-boot-starter-validation-2.2.0.RELEASE.jar"
+          hash:
+            value: "ab315d2930808b87908be42e19f64a1d5afbb012"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/2.2.0.RELEASE/spring-boot-starter-validation-2.2.0.RELEASE-sources.jar"
+          hash:
+            value: "1af0503146c55d8468e027ecb3b878c93db0db84"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework.boot:spring-boot-starter-web:2.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework.boot/spring-boot-starter-web@2.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Starter for building web, including RESTful, applications using\
+          \ Spring\n\t\tMVC. Uses Tomcat as the default embedded container"
+        homepage_url: "https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-starters/spring-boot-starter-web"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/2.2.0.RELEASE/spring-boot-starter-web-2.2.0.RELEASE.jar"
+          hash:
+            value: "a63661766218b06e540e58f7f3d4cf64278af92c"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/2.2.0.RELEASE/spring-boot-starter-web-2.2.0.RELEASE-sources.jar"
+          hash:
+            value: "8c5cf2662df8db2d3d58947735d0aecd75b7d549"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework.boot:spring-boot-starter:2.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework.boot/spring-boot-starter@2.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Core starter, including auto-configuration support, logging\
+          \ and YAML"
+        homepage_url: "https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-starters/spring-boot-starter"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/2.2.0.RELEASE/spring-boot-starter-2.2.0.RELEASE.jar"
+          hash:
+            value: "47b669895fc0e5bb8e5a54b7171029223f899cde"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/2.2.0.RELEASE/spring-boot-starter-2.2.0.RELEASE-sources.jar"
+          hash:
+            value: "7d627a3f4c4681c7d1780079ff34e2551f1a7f5a"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework.boot:spring-boot-test-autoconfigure:2.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@2.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Spring Boot Test Auto-Configure"
+        homepage_url: "https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-test-autoconfigure"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/2.2.0.RELEASE/spring-boot-test-autoconfigure-2.2.0.RELEASE.jar"
+          hash:
+            value: "6d37a8b23d9a8c00e494d9180cf2248c09f3077e"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/2.2.0.RELEASE/spring-boot-test-autoconfigure-2.2.0.RELEASE-sources.jar"
+          hash:
+            value: "a444227d981c0777ceb8c51944cb4ebe289b3541"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework.boot:spring-boot-test:2.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework.boot/spring-boot-test@2.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Spring Boot Test"
+        homepage_url: "https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-test"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/2.2.0.RELEASE/spring-boot-test-2.2.0.RELEASE.jar"
+          hash:
+            value: "f6fbe905903b46c78969ac4ddf24b7bf25dffce5"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/2.2.0.RELEASE/spring-boot-test-2.2.0.RELEASE-sources.jar"
+          hash:
+            value: "19dffb9b9592a3c64fd93043cfc012f9cef27a99"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework.boot:spring-boot:2.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework.boot/spring-boot@2.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Spring Boot"
+        homepage_url: "https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/2.2.0.RELEASE/spring-boot-2.2.0.RELEASE.jar"
+          hash:
+            value: "1fab3cd45761bf4ee500cfa3bbb2812648014ad0"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/2.2.0.RELEASE/spring-boot-2.2.0.RELEASE-sources.jar"
+          hash:
+            value: "d7ac345285de4d93e2635967f3485189a412d1ba"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-boot.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework:spring-aop:5.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework/spring-aop@5.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Spring AOP"
+        homepage_url: "https://github.com/spring-projects/spring-framework"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/spring-aop/5.2.0.RELEASE/spring-aop-5.2.0.RELEASE.jar"
+          hash:
+            value: "7031d44f063ea68e49b881a985967e7f2c144f3b"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/spring-aop/5.2.0.RELEASE/spring-aop-5.2.0.RELEASE-sources.jar"
+          hash:
+            value: "3392a85ed20efa81a7f9a95e1ae7c5e1e445589c"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-framework"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-framework.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework:spring-beans:5.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework/spring-beans@5.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Spring Beans"
+        homepage_url: "https://github.com/spring-projects/spring-framework"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/spring-beans/5.2.0.RELEASE/spring-beans-5.2.0.RELEASE.jar"
+          hash:
+            value: "03ae97694618c59e6af695a15e54fabb7e319776"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/spring-beans/5.2.0.RELEASE/spring-beans-5.2.0.RELEASE-sources.jar"
+          hash:
+            value: "c1f91703e9c11ca17eff22b193472847bc294604"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-framework"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-framework.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework:spring-context:5.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework/spring-context@5.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Spring Context"
+        homepage_url: "https://github.com/spring-projects/spring-framework"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/spring-context/5.2.0.RELEASE/spring-context-5.2.0.RELEASE.jar"
+          hash:
+            value: "a2638a8295f13ed8511c98a2379507677e1d16fa"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/spring-context/5.2.0.RELEASE/spring-context-5.2.0.RELEASE-sources.jar"
+          hash:
+            value: "a45f89a4dee3bc46a513dc25a2f09137691f152f"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-framework"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-framework.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework:spring-core:5.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework/spring-core@5.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Spring Core"
+        homepage_url: "https://github.com/spring-projects/spring-framework"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/spring-core/5.2.0.RELEASE/spring-core-5.2.0.RELEASE.jar"
+          hash:
+            value: "e0e1b3c304f70ed19d7905975f6f990916ada219"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/spring-core/5.2.0.RELEASE/spring-core-5.2.0.RELEASE-sources.jar"
+          hash:
+            value: "41630c954a4fc2e5982c6fd5647ee908ea0f8067"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-framework"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-framework.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework:spring-expression:5.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework/spring-expression@5.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Spring Expression Language (SpEL)"
+        homepage_url: "https://github.com/spring-projects/spring-framework"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/spring-expression/5.2.0.RELEASE/spring-expression-5.2.0.RELEASE.jar"
+          hash:
+            value: "ac6a616451129e717979f18d2bff40528698a46e"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/spring-expression/5.2.0.RELEASE/spring-expression-5.2.0.RELEASE-sources.jar"
+          hash:
+            value: "fbba200a2fca73f7275260db112956fc8fa178ba"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-framework"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-framework.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework:spring-jcl:5.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework/spring-jcl@5.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Spring Commons Logging Bridge"
+        homepage_url: "https://github.com/spring-projects/spring-framework"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/5.2.0.RELEASE/spring-jcl-5.2.0.RELEASE.jar"
+          hash:
+            value: "59b53ab6f01dd3ba85875b61a284c161584c18a3"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/5.2.0.RELEASE/spring-jcl-5.2.0.RELEASE-sources.jar"
+          hash:
+            value: "2902e952363d3345cf7bfbd122a39468a5f14684"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-framework"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-framework.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework:spring-test:5.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework/spring-test@5.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Spring TestContext Framework"
+        homepage_url: "https://github.com/spring-projects/spring-framework"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/spring-test/5.2.0.RELEASE/spring-test-5.2.0.RELEASE.jar"
+          hash:
+            value: "b0ce739d0eed4655dde524f5e66b5308a55b2889"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/spring-test/5.2.0.RELEASE/spring-test-5.2.0.RELEASE-sources.jar"
+          hash:
+            value: "172a7f62de40bcc8ec31a10cf4d899da82069ebc"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-framework"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-framework.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework:spring-web:5.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework/spring-web@5.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Spring Web"
+        homepage_url: "https://github.com/spring-projects/spring-framework"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/spring-web/5.2.0.RELEASE/spring-web-5.2.0.RELEASE.jar"
+          hash:
+            value: "d5b064196dc014519e751df549b4cc6a753fb191"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/spring-web/5.2.0.RELEASE/spring-web-5.2.0.RELEASE-sources.jar"
+          hash:
+            value: "e49b6753442bc35a00ef655e500725881ea59aee"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-framework"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-framework.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.springframework:spring-webmvc:5.2.0.RELEASE"
+        purl: "pkg:maven/org.springframework/spring-webmvc@5.2.0.RELEASE"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "Spring Web MVC"
+        homepage_url: "https://github.com/spring-projects/spring-framework"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/5.2.0.RELEASE/spring-webmvc-5.2.0.RELEASE.jar"
+          hash:
+            value: "652abc943904d67504dc822197868cafaa5e56b5"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/5.2.0.RELEASE/spring-webmvc-5.2.0.RELEASE-sources.jar"
+          hash:
+            value: "add389b42b4d1da98888ea19b9e0be6cf548a07b"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git://github.com/spring-projects/spring-framework"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "https://github.com/spring-projects/spring-framework.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.xmlunit:xmlunit-core:2.6.3"
+        purl: "pkg:maven/org.xmlunit/xmlunit-core@2.6.3"
+        declared_licenses:
+        - "The Apache Software License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "XMLUnit for Java"
+        homepage_url: "https://www.xmlunit.org/"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/xmlunit/xmlunit-core/2.6.3/xmlunit-core-2.6.3.jar"
+          hash:
+            value: "cdb208320aed4a7b94fb236cfbf91aeb6d0ede14"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/xmlunit/xmlunit-core/2.6.3/xmlunit-core-2.6.3-sources.jar"
+          hash:
+            value: "40d3e4dfd26329c1aff040a3de15fc0c1fd1fcfd"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Git"
+          url: "git@github.com:xmlunit/xmlunit.git"
+          revision: ""
+          path: ""
+        vcs_processed:
+          type: "Git"
+          url: "ssh://git@github.com/xmlunit/xmlunit.git"
+          revision: ""
+          path: ""
+      curations: []
+    - package:
+        id: "Maven:org.yaml:snakeyaml:1.25"
+        purl: "pkg:maven/org.yaml/snakeyaml@1.25"
+        declared_licenses:
+        - "Apache License, Version 2.0"
+        declared_licenses_processed:
+          spdx_expression: "Apache-2.0"
+        description: "YAML 1.1 parser and emitter for Java"
+        homepage_url: "http://www.snakeyaml.org"
+        binary_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/yaml/snakeyaml/1.25/snakeyaml-1.25.jar"
+          hash:
+            value: "8b6e01ef661d8378ae6dd7b511a7f2a33fae1421"
+            algorithm: "SHA-1"
+        source_artifact:
+          url: "https://repo.maven.apache.org/maven2/org/yaml/snakeyaml/1.25/snakeyaml-1.25-sources.jar"
+          hash:
+            value: "045379604b7a254120101009ba09537737daed6f"
+            algorithm: "SHA-1"
+        vcs:
+          type: "Mercurial"
+          url: "http://bitbucket.org/asomov/snakeyaml"
+          revision: "snakeyaml-1.25"
+          path: ""
+        vcs_processed:
+          type: "Mercurial"
+          url: "http://bitbucket.org/asomov/snakeyaml"
+          revision: "snakeyaml-1.25"
+          path: ""
+      curations: []
+    has_errors: false
+scanner: null
+evaluator: null

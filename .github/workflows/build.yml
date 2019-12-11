@@ -1,6 +1,6 @@
 name: CI
 
-on: [push]
+on: pull_request
 
 jobs:
   build:
@@ -9,7 +9,16 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+      with:
+        ref: 'master'
     - uses: boschcrank/oss-review-toolkit@master
       with:
-        output-dir: '/github/workspace/results'
-    - run: cat results/analyzer-result.yml
+        output-dir: '/github/workspace/results-master'
+    - uses: actions/checkout@v1
+      with:
+        ref: ${{ github.event.pull_request.head.sha }}
+    - uses: boschcrank/oss-review-toolkit@master
+      with:
+        output-dir: '/github/workspace/results-pr'
+    - run: cat results-master/analyzer-result.json
+    - run: cat results-pr/analyzer-result.json
