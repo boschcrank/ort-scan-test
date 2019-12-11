@@ -31,3 +31,9 @@ jobs:
     - run: |
       jq -r '.analyzer.result.packages[].package as $package | $package.declared_licenses_processed.spdx_expression ?// $package.declared_licenses_processed.unmapped[]' \
        master/results/analyzer-result.json | sort -u > pr.licenses
+    - run: export DIFF=$(diff master.licenses pr.licenses)
+    - uses: actions/github@v1.0.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        args: comment "$DIFF"
