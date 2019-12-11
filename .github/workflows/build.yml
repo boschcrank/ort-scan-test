@@ -12,17 +12,18 @@ jobs:
       with:
         ref: 'master'
         path: 'master'
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2-beta
       with:
         ref: ${{ github.event.pull_request.head.sha }}
         path: 'pr'
-    - uses: boschcrank/oss-review-toolkit@master
-      with:
-        input-dir: '/github/workspace/master'
-        output-dir: '/github/workspace/master/results'
-    - uses: boschcrank/oss-review-toolkit@master
-      with:
-        input-dir: '/github/workspace/pr'
-        output-dir: '/github/workspace/pr/results'
-    - run: cat results-master/analyzer-result.json
-    - run: cat results-pr/analyzer-result.json
+    - run: ls -R .
+    # - uses: boschcrank/oss-review-toolkit@master
+    #   with:
+    #     input-dir: '/github/workspace/master'
+    #     output-dir: '/github/workspace/master/results'
+    # - uses: boschcrank/oss-review-toolkit@master
+    #   with:
+    #     input-dir: '/github/workspace/pr'
+    #     output-dir: '/github/workspace/pr/results'
+    # - run: cat results-master/analyzer-result.json
+    # - run: cat results-pr/analyzer-result.json
