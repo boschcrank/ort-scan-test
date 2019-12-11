@@ -20,10 +20,14 @@ jobs:
     - uses: boschcrank/oss-review-toolkit@master
       with:
         input-dir: '/github/workspace/master'
-        output-dir: '/github/workspace/master/results'
+        output-dir: '/github/workspace/master/results/'
     - uses: boschcrank/oss-review-toolkit@master
       with:
         input-dir: '/github/workspace/pr'
-        output-dir: '/github/workspace/pr/results'
-    - run: cat master/results/analyzer-result.json
-    - run: cat pr/results/analyzer-result.json
+        output-dir: '/github/workspace/pr/results/'
+    - run: |
+      jq -r '.analyzer.result.packages[].package as $package | $package.declared_licenses_processed.spdx_expression ?// $package.declared_licenses_processed.unmapped[]' \
+       master/results/analyzer-result.json | sort -u > master.licenses
+    - run: |
+      jq -r '.analyzer.result.packages[].package as $package | $package.declared_licenses_processed.spdx_expression ?// $package.declared_licenses_processed.unmapped[]' \
+       master/results/analyzer-result.json | sort -u > pr.licenses
