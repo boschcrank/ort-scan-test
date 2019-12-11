@@ -25,5 +25,5 @@ jobs:
       with:
         input-dir: '/github/workspace/pr'
         output-dir: '/github/workspace/pr/results'
-    - run: cat results-master/analyzer-result.json
-    - run: cat results-pr/analyzer-result.json
+    - run: cat master/results/analyzer-result.json
+    - run: cat pr/results/analyzer-result.json
