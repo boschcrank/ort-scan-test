@@ -9,7 +9,4 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - uses: boschcrank/oss-review-toolkit@master
-      with:
-        output-dir: '/github/workspace/results'
-    - run: cat results/analyzer-result.yml
+    - uses: unly/ort-action@master
